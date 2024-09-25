@@ -1,0 +1,82 @@
+{
+    "article":[
+        {
+            "title":"this is new articles 1",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new articles 2",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new articles 3",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new articles 4",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new articles 5",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        }
+    ],
+    "sport":[
+        {
+            "title":"this is new sport 6",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new sport 7",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new sport 8",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new sport 9",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new sport 10",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        }
+    ], "stories":[
+        {
+            "title":"this is new stories 11",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new stories 12",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new stories 13",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new stories 14",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        },
+        {
+            "title":"this is new stories 15",
+            "content":"Lorem Ipsum IS simply dummy dummy",
+            "rating":5
+        }
+    ]
+}

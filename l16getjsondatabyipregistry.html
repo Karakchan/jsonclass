@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>HTTP Request by AJAX pregistry </title>
+            <style type="text/css">
+
+                body{
+                    height: 100vh;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                .container{
+                    width: 300px;
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                }
+
+
+
+
+            </style>
+        </head>
+        <body>
+
+            <div class="container">
+                <div id="display"></div>
+                <button type="button" id="btn">Load Data</button>
+            </div>
+            <script type="text/Javascript">
+ 
+
+          const getdisplay = document.getElementById('display');
+            const getbtn = document.getElementById('btn');
+
+            getbtn.addEventListener('click',function(){
+                loaddata();
+             });
+
+        function loaddata(){
+
+
+                const key = "p9kk103z9mf567tn";
+                const uri = `https://api.ipregistry.co?key=${key}`;
+
+                const xmlhttp = new XMLHttpRequest();
+
+
+                xmlhttp.open('GET',uri); //defualt mean yes synchronize
+
+                xmlhttp.onload = function(){
+                    let result = xmlhttp.responseText;
+
+                    result = JSON.parse(result);
+                    console.log(result);
+
+                    let html = `
+                            <ul>
+                                <li>External IP = ${result.ip}</li>
+                                <li>External Device = ${result.company.name}</li>
+                                <li>Operation System = ${result.user_agent.os.name}</li>
+                                <li>Load By = ${result.type}</li>
+                                <li>City = ${result.location.city}</li>
+                                <li>Local Currency = ${result.currency.symbol}</li>
+                                <li>Time Zone = ${result.time_zone.id}</li>
+
+                                
+                            </ul>
+                        `;
+
+                        getdisplay.innerHTML  = html;
+                }
+                xmlhttp.send();
+            
+         }
+
+        
+
+
+
+            </script>
+        </body>
+    </html>
+<!-- 
+
+Local IP
+        (i) Dynamic IP
+        (ii) Fixed IP / Static IP
+
+
+External IP
+        (i) public IP/ Dynamic IP
+        (ii) Fixed IP / Static IP -->
+
+

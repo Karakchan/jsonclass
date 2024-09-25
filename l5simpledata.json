@@ -1,0 +1,15 @@
+{  
+        "firstname":"Kyaw",
+        "lastname":"Zayar",
+        "age":20,
+        "tax":false,
+        "passport":null,
+        "remark":"Lorem Ipsum is simply \"dummy dummy\" of the printing",
+        "holiday":["Satruday","Sunday"],
+        "qualify":[
+            {"subject":"myanmar","mark":80},
+            {"subject":"english","mark":80},
+            {"subject":"math","mark":90}
+        ]
+    
+}

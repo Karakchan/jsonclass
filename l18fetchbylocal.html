@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>HTTP Request by AJAX pregistry </title>
+            <style type="text/css">
+
+                body{
+                    height: 100vh;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                .container{
+                    width: 300px;
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                }
+
+
+
+
+            </style>
+        </head>
+        <body>
+
+            <script type="text/javascript">
+
+                // // =>fetch()
+
+                // // fetch(url)
+                // // .then(response=>response.json())
+                // // .then(data)
+                // // .catch(err=>console.log(err))
+
+                // const url = "./l15simpledata.json";
+
+                // fetch(url).then(function(response){
+                //     console.log(response);
+                //     console.log(response.status);
+                // })
+
+
+                //Arrow Function
+
+                fetch(url).then(response=>response.json()).then(data=>{
+                    console.log(data);
+                    console.log(data.wind.speed);
+                }).catch(err=>console.log(err));
+
+            </script>
+        </body>
+    </html>

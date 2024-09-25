@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>HTTP Request by AJAX Open Weather Map</title>
+        </head>
+        <body>
+            <script type="text/Javascript">
+
+                //Array function
+                uri = "./l11getjsondatabyopwh.html";
+
+                fetch(uri).then(response=>response.json())
+                .then(data)
+                .catch(err=>console.log(err));
+               
+                // console.log(result);
+                // console.log(result.weather); //Dot Notation
+                // console.log(result.weather[0].main); //Dot Notation
+                // console.log(result.weather[0]["main"]); //Bracket Notation
+
+             
+            </script>
+        </body>
+    </html>
+
+
+    <!-- xxxxxxx -->

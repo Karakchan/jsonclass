@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Jquery Ajax - Local</title>
+            <style type="text/css">
+
+       
+
+
+            </style>
+        </head>
+        <body>
+            
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <script type="text/javascript">
+
+                // =>$.ajax()
+
+                // $.ajax({
+                //     method:'',
+                //     url:url,
+                //     dataType:'json' //text
+                // }).done((data)=>{
+                //     output
+                // }).fail(()=>{
+                //     error
+                // });
+                
+             
+                
+                const url = "./l5simpledata.json";
+
+                //method 1
+
+                // $.ajax({
+                //     method:"GET",
+                //     url:url,
+                //     dataType:'json' //text
+                // }).done(()=>{
+                //     console.log(data);
+                //     console.log(typeof data); //object
+
+                //     console.log(data.firstname ,data.lastname); //Dot Notation
+                //     console.log(data.remark); //Dot Notation
+                //    console.log(data.qualify[0]["subject"],data.qualify[0]["mark"]); //Bracket Notatio
+                // }).fail(()=>{
+
+                // });
+
+                //method 2
+
+                // $.ajax({
+                //     method:"GET",
+                //     url:url,
+                //     dataType:'json', //text
+                //     success: (getdata)
+                // });
+
+
+                // function getdata(data,status,xhr){
+                //     console.log(data);
+                //     console.log(typeof data); //object
+
+                //     console.log(status); //success
+
+                //     console.log(xhr);
+                //     console.log(xhr.stauts); //200
+
+                //     console.log(data.firstname ,data.lastname); //Dot Notation
+                //      console.log(data.remark); //Dot Notation
+                //     console.log(data.qualify[0]["subject"],data.qualify[0]["mark"]); //Bracket Notatio
+                // }
+
+
+                //method 3 (short Hand)
+
+                // $.get(url,output);
+
+                // function output(data){
+                //     console.log(data);
+                //     console.log(data.firstname),data.lastname;
+                // }
+
+               
+
+               
+            
+                  // =>Method 4
+
+                // $.getJSON(url,{
+                //     format:'json'  //text
+                // }).done((data)=>{
+                //     output
+                // }).fail(()=>{
+                //     error
+                // }).always(function(){
+                //     your execute code are here
+                // });
+
+                // $.getJSON(url,{
+                //     format:'json'  //text
+                // }).done(function(data){
+                //     console.log(data);
+                //     console.log(data.firstname,data.lastname);
+                // }).fail(function(){
+                //     console.log(error);
+                // }).always(function(){
+                //     console.log('bye bye');
+                // });
+
+            
+
+            </script>
+        </body>
+    </html>
+

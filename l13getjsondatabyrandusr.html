@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>HTTP Request by AJAX Random user </title>
+        </head>
+        <body>
+            <script type="text/Javascript">
+
+             let uri = "https://randomuser.me/api/";
+
+            //  console.log(uri);
+
+            const xmlhttp = new XMLHttpRequest();
+
+            console.log(xmlhttp);
+
+
+            xmlhttp.open("GET",uri,true); //false mean  sychfonize
+            xmlhttp.send();
+
+            xmlhttp.onreadystatechange = function(){
+                //console.log("State Changed = ", xmlhttp.readyState,xmlhttp,status);
+
+                if(xmlhttp.readyState === 4 && xmlhttp.status===200){
+                    let reuslt = xmlhttp.responeText;
+
+                    //console.log(result);
+
+                     result = JSON.parse(result);
+
+                    //   console.log(result);
+
+                    console.log(result.results);
+                    console.log(result.results[0]);
+                    console.log(result.results[0].name);
+                    console.log(result.results[0].name.title,result.results[0].name.first,result.results[0].name.last);
+
+
+                }
+
+            }
+            //=> result is oki
+            // xmlhttp.open("GET",uri,true); //false mean  sychfonize
+            // xmlhttp.send();
+           
+             //=> result is oki
+            // xmlhttp.open("GET",uri,false); //false mean no sychfonize
+            // xmlhttp.send();
+           
+            </script>
+        </body>
+    </html>
+
+<!-- 
+=> xmlhttp.onreadystatuschange
+xmlhttp.readyState ===4
+
+0 = UNSENST open() has not been called yet
+1 = OPENED send() has been called
+2 = HEADER_RECIVED send() has been called. and headers and status are available
+3 = LOADING download, responeText hold partial datas
+4 = DONE The operation is completed. -->

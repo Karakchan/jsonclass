@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Javascript Object & JSON object</title>
+        </head>
+        <body>
+            <script type="text/Javascript">
+                const employee = {
+                    firstname:"Maung",
+                    lastname:"zaw",
+                    "age":20,
+                    'tax':true,
+                    getname:function(){
+                        return "I am "+this.firstname+ " " + this.lastname;
+                    }
+                };
+
+                console.log(employee);
+                console.log(employee.firstname,employee.lastname);
+                console.log(employee.age,employee.tax);
+                console.log(employee.getname());
+
+                let student = {
+                    "firstname":"Kyaw",
+                    "lastname":"Zayar",
+                    "age":20,
+                    "tax":false,
+                    "passport":null,
+                    "remark":"Lorem Ipsum is simply \"dummy dummy\" of the printing",
+                    "holiday":["Satruday","Sunday"],
+                    "qualify":[
+                        {"subject":"myanmar","mark":80},
+                        {"subject":"english","mark":80},
+                        {"subject":"math","mark":80}
+                    ]
+                }
+
+                console.log(student);
+                console.log(student.firstname,student.lastname);
+                console.log(student.age,student.tax);
+                console.log(student.passport);
+                console.log(student.holiday);
+                console.log(student.holiday[1],student.holiday[0]);
+                console.log(student.qualify);
+                console.log(student.qualify[0]);
+                console.log(student.qualify[0].subject,student.qualify[0].mark);
+
+
+
+
+            </script>
+        </body>
+    </html>
